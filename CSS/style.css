@@ -1,81 +1,274 @@
-    #myName {
-        font-size: 120px;
-        line-height: 150px;
-        text-shadow: 3px -1px #ffffff, 1px 1px #d60, -3px 0 4px #000;
-        font-family: "Segoe print", Arial, Helvetica, sans-serif;
-        color: #000000;
-        padding: 32px;
-        font-weight: lighter;
-        -moz-box-shadow: 2px 2px 6px #888;
-        -webkit-box-shadow: 2px 2px 6px #888;
-        box-shadow: 2px 2px 6px #888;
-        position: fixed;
-        top: 50%;
-        left: 40%;
-        margin-top: -50px;
-        margin-left: -100px;
+#myCanvas {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+}
+
+#myName {
+    font-size: 120px;
+    line-height: 150px;
+    text-shadow: 3px -1px #ffffff, 1px 1px #d60, -3px 0 4px #000;
+    font-family: "Segoe print", Arial, Helvetica, sans-serif;
+    color: #000000;
+    padding: 32px;
+    font-weight: lighter;
+    -moz-box-shadow: 2px 2px 6px #888;
+    -webkit-box-shadow: 2px 2px 6px #888;
+    box-shadow: 3px 3px 6px #888;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    margin-top: -50px;
+    margin-left: -100px;
+}
+
+.dropdown {
+    float: left;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #002e5b;
+    font-size: 36px;
+    padding: 25px 20px;
+    display: inline-block;
+    transition: all 0.5s ease 0s;
+    background-color: inherit;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #002e5b;
+    font-size: 18px;
+    padding: 25px 20px;
+    display: inline-block;
+    transition: all 0.5s ease 0s;
+}
+
+* {
+    text-decoration: none;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+section {
+    max-width: 1200px;
+    margin: 0px auto;
+    display: table;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    display: table;
+    background-color: #fde428;
+    margin-bottom: 50px
+}
+
+.navigate {
+    overflow: hidden;
+}
+
+nav {
+    width: auto;
+    float: right;
+}
+
+nav ul {
+    display: table;
+    float: right;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li:last-child {
+    padding-right: 0px;
+}
+
+nav ul li a {
+    color: #002e5b;
+    font-size: 36px;
+    padding: 25px 20px;
+    display: inline-block;
+    transition: all 0.5s ease 0s;
+}
+
+nav ul li a:hover {
+    background-color: #002e5b;
+    color: #fde428;
+    transition: all 0.5s ease 0s;
+}
+
+nav ul li a:hover i {
+    color: #fde428;
+    transition: all 0.5s ease 0s;
+}
+
+nav ul li a i {
+    padding-right: 10px;
+    color: #002e5b;
+    transition: all 0.5s ease 0s;
+}
+
+.toggle-menu ul {
+    display: table;
+    width: 25px;
+}
+
+.toggle-menu ul li {
+    width: 100%;
+    height: 3px;
+    background-color: #002e5b;
+    margin-bottom: 4px;
+}
+
+.toggle-menu ul li:last-child {
+    margin-bottom: 0px;
+}
+
+input[type=checkbox],
+label {
+    display: none;
+}
+
+@media only screen and (max-width: 1440px) {
+    section {
+        max-width: 95%;
     }
-    
-    * {
-        list-style: none;
-        margin: 0px;
-        padding: 0px;
-        outline: none;
-        overflow: hidden;
-    }
-    
+}
+
+@media only screen and (max-width: 980px) {
     header {
+        padding: 20px 0px;
+    }
+    #logo {
+        padding: 0px;
+    }
+    input[type=checkbox] {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+        background: none;
+    }
+    input[type=checkbox]:fous {
+        background: none;
+    }
+    label {
+        padding: 8px 0px;
+        display: inline-block;
+        cursor: pointer;
+    }
+    input[type=checkbox]:checked~nav {
+        display: block;
+    }
+    nav {
+        display: none;
+        position: absolute;
+        top: 53px;
+        background-color: #002e5b;
+        padding: 0px;
+        z-index: 99;
+    }
+    nav ul {
+        width: auto;
+    }
+    nav ul li {
+        float: none;
+        padding: 0px;
         width: 100%;
         display: table;
-        background-color: #fde428;
     }
-    
-    nav {
-        display: table;
-        float: right;
-        background-color: #fde428;
-    }
-    
-    nav ul li {
-        float: left;
-    }
-    
-    nav ul li:last-child {
-        padding-right: 0px;
-    }
-    
-    nav ul li a:hover {
-        background-color: #000;
-        color: #ffff;
-        opacity: 0.6;
-    }
-    
-    .navbar-nav>li {
-        border-right: 3px solid #000;
-    }
-    
-    .navbar-nav>li:last-child {
-        border: none;
-    }
-    
     nav ul li a {
-        padding: 25px 20px;
-        display: inline-block;
-        color: black;
-        text-decoration: none;
-        font-size: 35px;
-        word-spacing: 15px;
+        color: #FFF;
+        font-size: 15px;
+        padding: 10px 20px;
+        display: block;
+        border-bottom: 1px solid rgba(225, 225, 225, 0.1);
     }
-    
+    .dropdown .dropbtn {
+        font-size: 15px;
+    }
+    nav ul li a i {
+        color: #fde428;
+        padding-right: 13px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
     section {
-        max-width: 1200px;
-        margin: auto;
-        display: table;
-        position: relative;
+        max-width: 90%;
     }
-    
-    #myCanvas {
-        margin-bottom: -129px;
-        position: absolute;
-        left: 0;
+}
+
+@media only screen and (max-width: 360px) {
+    label {
+        padding: 5px 0px;
     }
+    nav {
+        top: 47px;
+    }
+}
+
+#About {
+    text-align: center;
+}
+
+#intro-container {
+    background-color: blue;
+    padding: 50px
+}
+
+#background-container {
+    background-color: orange;
+    padding: 50px
+}
