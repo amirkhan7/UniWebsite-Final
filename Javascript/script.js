@@ -1,23 +1,24 @@
+// jshint esversion:6
 document.addEventListener('DOMContentLoaded', (event) => {
-    const $ = function(selector) {
+
+    var $ = function(selector) {
         return document.querySelector(selector);
     };
 
 
-    const ctx = $("#myCanvas").getContext('2d');
-    const ball_array = [];
+    var ctx = $("#myCanvas").getContext('2d');
+    var balls = [];
 
     function randomColor() {
         return `hsl(${Math.random() * 760}, 80%, 50%)`;
     }
 
     function randomGradient(size) {
-        const gradient = ctx.createLinearGradient(-size, 0, size, 0);
+        var gradient = ctx.createLinearGradient(-size, 0, size, 0);
         gradient.addColorStop(0, randomColor());
         gradient.addColorStop(1, '#FFEFFB');
         return gradient;
     }
-
     // JS style, constructors are always Capitalized
     class Ball {
         constructor() {
@@ -33,8 +34,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
         draw() {
             ctx.save();
             ctx.fillStyle = this.color; //****
-            ctx.strokeStyle = 'black';
-            ctx.lineWidth = 2;
+            ctx.strokeStyle = 'white';
+            ctx.lineWidth = 0;
             ctx.translate(this.x, this.y);
             ctx.rotate(this.angle);
             ctx.beginPath();
@@ -50,29 +51,30 @@ document.addEventListener('DOMContentLoaded', (event) => {
             this.x = (this.x + this.vx * deltaTime + ctx.canvas.width) % ctx.canvas.width;
             this.y = (this.y + this.vy * deltaTime + ctx.canvas.height) % ctx.canvas.height;
         }
-    };
+    }
 
+    function create_balls() {
+        for (let i = 0; i < 700; i++) {
+            var temp = new Ball();
+            balls.push(temp);
+        }
+    }
     let then = 0;
 
     function going(now) {
+
         now *= 0.001; // convert to seconds
-        const deltaTime = now - then;
+        var deltaTime = now - then;
         then = now;
 
         ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
-        ball_array.forEach((ball) => {
+        balls.forEach((ball) => {
             ball.move(deltaTime);
             ball.draw();
         });
         requestAnimationFrame(going);
     }
 
-    function create_balls() {
-        for (let i = 0; i < 900; i++) {
-            const temp = new Ball();
-            ball_array.push(temp);
-        }
-    }
 
     function resize_can() {
         ctx.canvas.width = window.innerWidth;
@@ -84,4 +86,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
     create_balls();
 
     requestAnimationFrame(going);
-})
+});

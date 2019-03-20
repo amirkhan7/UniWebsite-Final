@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="../CSS/style.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <script src="JS/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>About Me</title>
 </head>
 
-<body>
+<body id="#PersonalBody">
     <header>
         <section>
             <label for="toggle-1" class="toggle-menu"><ul><li></li> <li></li> <li></li></ul></label>
@@ -34,6 +35,44 @@
             </nav>
         </section>
     </header>
+    <div class="container">
+        <ul class="container_list">
+            <li>
+                <a href="#">Movies</a>
+            </li>
+            <li>
+                <a href="#">Games</a>
+            </li>
+            <li>
+                <a href="#">Books</a>
+            </li>
+            <li>
+                <a href="#">Songs</a>
+            </li>
+            <li>
+                <a href="#">Cats</a>
+            </li>
+        </ul>
+    </div>
+
+    <body>
+        <h1>Today's your special day!</h1>
+        <button id="reveal">Why's that?</button>
+        <button id="hide">this is a test</button>
+        <div id="ajax-content">
+        </div>
+    </body>
+
+    <script>
+        $('#reveal').on('click', function() {
+            $('#ajax-content').load('../index.html');
+            $('#reveal').hide();
+        })
+
+        $('#hide').on('click', function() {
+            $('#ajax-content').detach('../index.html');
+        })
+    </script>
 </body>
 
 </html>

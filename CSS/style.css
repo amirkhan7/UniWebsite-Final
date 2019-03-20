@@ -5,7 +5,8 @@
 }
 
 #myName {
-    font-size: 120px;
+    font-size: 9vw;
+    text-align: center;
     line-height: 150px;
     text-shadow: 3px -1px #ffffff, 1px 1px #d60, -3px 0 4px #000;
     font-family: "Segoe print", Arial, Helvetica, sans-serif;
@@ -15,20 +16,25 @@
     -moz-box-shadow: 2px 2px 6px #888;
     -webkit-box-shadow: 2px 2px 6px #888;
     box-shadow: 3px 3px 6px #888;
-    position: absolute;
+    position: fixed;
     top: 50%;
-    left: 40%;
+    left: 30%;
     margin-top: -50px;
     margin-left: -100px;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
 }
 
 .dropdown {
     float: left;
 }
 
-.navbar a:hover,
 .dropdown:hover .dropbtn {
-    background-color: red;
+    background-color: #002e5b;
+    color: #fde428;
 }
 
 .dropdown-content {
@@ -67,6 +73,10 @@
     display: inline-block;
     transition: all 0.5s ease 0s;
     background-color: inherit;
+}
+
+.dropbtn a {
+    color: #002e5b
 }
 
 .dropdown-content {
@@ -176,6 +186,15 @@ nav ul li a i {
     margin-bottom: 0px;
 }
 
+.grey-colour-container {
+    background-color: #aeb7c4;
+    padding: 600px;
+}
+
+.grey-colour-container .CrossOver {
+    margin-top: -800px;
+}
+
 input[type=checkbox],
 label {
     display: none;
@@ -191,16 +210,13 @@ label {
     header {
         padding: 20px 0px;
     }
-    #logo {
-        padding: 0px;
-    }
     input[type=checkbox] {
         position: absolute;
+        background: none;
         top: -9999px;
         left: -9999px;
-        background: none;
     }
-    input[type=checkbox]:fous {
+    input[type=checkbox]:focus {
         background: none;
     }
     label {
@@ -248,6 +264,9 @@ label {
     section {
         max-width: 90%;
     }
+    #myName {
+        font-size: 50px
+    }
 }
 
 @media only screen and (max-width: 360px) {
@@ -259,16 +278,135 @@ label {
     }
 }
 
-#About {
+.About {
+    text-align: left;
+    font-size: 150px;
+    padding: 40px;
+    font-family: "gt_walsheimbold";
+    font-weight: 400;
+    width: 100%;
+    margin-top: 8%;
+    margin-left: -15px;
+}
+
+span {
+    font-size: 150px;
+    font-weight: 700;
+}
+
+.colour-container {
+    background-color: #65def1;
+    padding: 600px;
+}
+
+.colour-container .CrossOver {
+    margin-top: -800px;
+}
+
+.background-container {
+    background-color: #ffffff;
+    padding: 600px;
+}
+
+#WorkExperience {
     text-align: center;
 }
 
-#intro-container {
-    background-color: blue;
-    padding: 50px
+.image-conatiner {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    text-align: center;
 }
 
-#background-container {
-    background-color: orange;
-    padding: 50px
+.CrossOver {
+    width: 800px;
+    height: 1700px;
+    height: auto;
+}
+
+#background {
+    text-align: right;
+}
+
+.Text-Left {
+    margin-left: -900px;
+    font-size: 2vw;
+}
+
+.Text {
+    font-size: 2vw;
+    text-align: center;
+}
+
+.Text-Right {
+    font-size: 300%;
+    text-align: right;
+    margin-left: 500px;
+}
+
+.overlapTitle {
+    font-size: 5rem;
+    text-align: left;
+    margin-top: -50px;
+}
+
+.AboutSpan {
+    color: #65def1
+}
+
+.whiteText {
+    text-align: center;
+    font-size: 3vw;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#canvas1 {
+    display: block;
+    background: #020202;
+    cursor: crosshair;
+}
+
+#PersonalBody {
+    color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 0 40px;
+    perspective: 900px;
+    perspective-origin: left;
+}
+
+.container_list {
+    width: 50%;
+    height: 100%;
+    list-style: none;
+}
+
+.container_list a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 150px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    transform: rotateY(30deg);
+    transform-style: preserve-3d;
+    transform-origin: left center;
+    text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px, #ff2d95 0px 0px 20px, #ff2d95 0px 0px 30px, #ff2d95 0px 0px 40px, #ff2d95 0px 0px 50px, #ff2d95 0px 0px 75px;
+    will-change: transform;
+    transition: transform 0.7s;
+}
+
+.container_list a:hover {
+    transform: rotateY(-2deg);
 }
