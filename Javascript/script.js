@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     class Ball {
         constructor() {
             this.x = ctx.canvas.width;
-            this.y = ctx.canvas.height * 2;
+            this.y = ctx.canvas.height;
             this.vx = (Math.random() - 0.3) * 90;
             this.vy = (Math.random() - 0.3) * 90;
             this.radius = (Math.random() + 0.5) * 10;
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 
     function create_balls() {
-        for (let i = 0; i < 700; i++) {
+        for (let i = 0; i < 270; i++) {
             var temp = new Ball();
             balls.push(temp);
         }
