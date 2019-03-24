@@ -443,7 +443,7 @@ body {
     transform: rotateY(-2deg);
 }
 
-.footer{
+#footer{
     width: 200px;
   height: 200px;
   margin: 50px auto 0;
@@ -451,7 +451,7 @@ body {
   transition: 200ms ease-in-out;
 }
 
-.footer ul {
+#footer ul {
 
     margin: 0;
     padding: 0;
@@ -461,7 +461,7 @@ body {
 }
 
 
-.footer ul:after {
+#footer ul:after {
     content: '+';
     position: absolute;
     width: 100px;
@@ -474,7 +474,7 @@ body {
     transition: 300ms ease-in-out;
     opacity: 1;
   }
-  .footer ul li {
+#footer ul li {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -484,7 +484,7 @@ body {
     position: absolute;
     transition: 200ms ease-in-out;
   }
-  .footer ul li i {
+#footer ul li i {
     position: absolute;
     top: 25%;
     left: 30%;
@@ -492,63 +492,63 @@ body {
     transition: 200ms ease-in-out;
     opacity: 0;
   }
-  .footer ul li:first-child {
+#footer ul li:first-child {
     top: 20%;
     left: 20%;
     background-position: center;
     border-top-left-radius: 10px;
   }
-  .footer ul li:nth-child(2) {
+  #footer ul li:nth-child(2) {
     top: 20%;
     left: 50%;
     border-top-right-radius: 10px;
   }
-  .footer ul li:nth-child(3) {
+  #footer ul li:nth-child(3) {
     top: 50%;
     left: 20%;
     border-bottom-left-radius: 10px;
   }
-  .footer ul li:nth-child(4) {
+  #footer ul li:nth-child(4) {
     top: 50%;
     left: 50%;
     border-bottom-right-radius: 10px;
   }
-  .footer:hover {
+  #footer:hover {
     transform: rotate(45deg);
   }
-  .footer:hover ul:after {
+  #footer:hover ul:after {
     opacity: 0;
   }
-  .footer:hover ul li {
+  #footer:hover ul li {
     border: solid 3px #ed8899;
     transform: rotate(-45deg);
   }
-  .footer:hover ul li i {
+  #footer:hover ul li i {
     opacity: .5;
   }
-  .footer:hover ul li:hover {
+  #footer:hover ul li:hover {
     transform: scale(0.9);
   }
-  .footer:hover ul li:hover i {
+  #footer:hover ul li:hover i {
     opacity: 1;
     transform: rotate(-45deg);
   }
-  .footer:hover ul li:first-child {
+  #footer:hover ul li:first-child {
     top: 10%;
     left: 10%;
     border-radius: 50%;
   }
-  .footer:hover ul li:nth-child(2) {
+  #footer:hover ul li:nth-child(2) {
     top: 10%;
     left: 60%;
     border-radius: 50%;
   }
-  .footer:hover ul li:nth-child(3) {
+  #footer:hover ul li:nth-child(3) {
     top: 60%;
     left: 10%;
     border-radius: 50%;
   }
-  .footer:hover ul li:nth-child(4) {
+  #footer:hover ul li:nth-child(4) {
     top: 60%;
     left: 60%;
     border-radius: 50%;

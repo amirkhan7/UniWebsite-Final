@@ -24,8 +24,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
         constructor() {
             this.x = ctx.canvas.width;
             this.y = ctx.canvas.height;
-            this.vx = (Math.random() - 0.3) * 90;
-            this.vy = (Math.random() - 0.3) * 90;
+            this.vx = (Math.random() - 0.3) * 170;
+            this.vy = (Math.random() - 0.3) * 170;
             this.radius = (Math.random() + 0.5) * 10;
             this.color = randomGradient(this.radius);
             this.angle = Math.random() * Math.PI * 4;
