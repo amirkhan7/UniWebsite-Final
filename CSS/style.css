@@ -307,6 +307,9 @@ label {
     #myName {
         font-size: 50px
     }
+    .Text-Left {
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 360px) {
@@ -316,15 +319,17 @@ label {
     nav {
         top: 47px;
     }
+    .Text-Left {
+        text-align: center;
+    }
 }
 
 .About {
     text-align: left;
-    font-size: 150px;
+    font-size: 120pt;
     padding: 40px;
     font-family: "gt_walsheimbold";
     font-weight: 400;
-    width: 100%;
     margin-top: 8%;
     margin-left: -15px;
 }
@@ -335,11 +340,14 @@ span {
 }
 
 .colour-container {
-    display: flex;
-    flex-direction: row;
+    color: #fff;
     background-color: #65def1;
     padding: 400px;
     text-align: center;
+    margin-bottom: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
 }
 
 .colour-container .CrossOver {
@@ -355,42 +363,26 @@ span {
     text-align: center;
 }
 
-.image-conatiner {
-    height: 100%;
-    width: 100%;
-    margin: auto;
-    text-align: center;
-}
-
-.CrossOver {
-    width: 800px;
-    height: 1700px;
-    height: auto;
-}
-
-#background {
-    text-align: right;
-}
-
 .Text-Left {
-    font-size: 32pt;
+    text-align: left;
+    font-size: 24pt;
 }
 
 .Text {
-    font-size: 32pt;
+    font-size: 24pt;
     text-align: center;
 }
 
 .Text-Right {
     font-size: 32pt;
     text-align: right;
-    margin-left: 500px;
 }
 
 .text-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    background-color: #fff;
+    padding: 400px;
+    text-align: center;
+    margin-bottom: 90px;
 }
 
 .overlapTitle {
@@ -400,6 +392,7 @@ span {
 }
 
 .AboutSpan {
+    font-size: 100pt;
     color: #65def1
 }
 
@@ -628,4 +621,12 @@ body {
 
 #skill3 {
     width: 50%;
+}
+
+#test {
+    width: 75%;
+    height: 95%;
+    display: flex;
+    flex-flow: column;
+    vertical-align: middle;
 }
