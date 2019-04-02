@@ -250,23 +250,28 @@ label {
     header {
         padding: 20px 0px;
     }
+
     input[type=checkbox] {
         position: absolute;
         background: none;
         top: -9999px;
         left: -9999px;
     }
+
     input[type=checkbox]:focus {
         background: none;
     }
+
     label {
         padding: 8px 0px;
         display: inline-block;
         cursor: pointer;
     }
+
     input[type=checkbox]:checked~nav {
         display: block;
     }
+
     nav {
         display: none;
         position: absolute;
@@ -275,15 +280,18 @@ label {
         padding: 0px;
         z-index: 99;
     }
+
     nav ul {
         width: auto;
     }
+
     nav ul li {
         float: none;
         padding: 0px;
         width: 100%;
         display: table;
     }
+
     nav ul li a {
         color: #FFF;
         font-size: 15px;
@@ -291,9 +299,11 @@ label {
         display: block;
         border-bottom: 1px solid rgba(225, 225, 225, 0.1);
     }
+
     .dropdown .dropbtn {
         font-size: 15px;
     }
+
     nav ul li a i {
         color: #fde428;
         padding-right: 13px;
@@ -304,9 +314,11 @@ label {
     section {
         max-width: 90%;
     }
+
     #myName {
         font-size: 50px
     }
+
     .Text-Left {
         text-align: center;
     }
@@ -316,9 +328,11 @@ label {
     label {
         padding: 5px 0px;
     }
+
     nav {
         top: 47px;
     }
+
     .Text-Left {
         text-align: center;
     }
@@ -345,18 +359,16 @@ span {
     padding: 400px;
     text-align: center;
     margin-bottom: 90px;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-}
+    display: grid;
+    grid-template-columns: max-content 1fr;
 
-.colour-container .CrossOver {
-    margin-top: -800px;
 }
 
 .background-container {
     background-color: #ffffff;
     padding: 600px;
+    display: grid;
+    grid-template-columns: max-content 1fr;
 }
 
 #WorkExperience {
@@ -364,11 +376,13 @@ span {
 }
 
 .Text-Left {
+    margin-top: -50px;
     text-align: left;
     font-size: 24pt;
 }
 
 .Text {
+    margin-top: 95px;
     font-size: 24pt;
     text-align: center;
 }
@@ -624,9 +638,7 @@ body {
 }
 
 #test {
-    width: 75%;
-    height: 95%;
-    display: flex;
-    flex-flow: column;
-    vertical-align: middle;
+    width: 50%;
+    height: auto;
+
 }
