@@ -13,117 +13,65 @@
     <title>Photos</title>
 </head>
 
-<body>
+<body id="photos">
     <header>
-        <section>
-            <label for="toggle-1" class="toggle-menu"><ul><li></li> <li></li> <li></li></ul></label>
+        <div class="section">
+            <label for="toggle-1" class="toggle-menu">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </label>
             <input type="checkbox" id="toggle-1">
             <nav>
                 <div class="navigate">
                     <ul>
                         <li><a href="../index.html"><i class="icon-home"></i>Home</a></li>
-                        <li><a href="Portfolio.html">Portfolio</a></li>
-                        <li><a href="ContactMe.html">Contact</a></li>
                         <li><a href="Photos.html">Photos</a></li>
-                        <div class="dropdown">
-                            <button class="dropbtn"><a href ="AboutMe.html">About Me</a></button>
-                            <div class="dropdown-content">
-                                <a href="Personal.html">Personal</a>
-                                <a href="Professional.html">Professional</a>
-                            </div>
+                        <li><a href="Professional.html">Professional</a></li>
+                        <li><a href="Fireworks.html">Fireworks</a></li>
                     </ul>
-                    </div>
+                </div>
             </nav>
-        </section>
+        </div>
     </header>
     <div class="row">
         <div class="column">
-            <img src="../Assests/Bowie.jpg" style="width:100%">
-            <img src="../Assests/IMG_20180917_203948.jpg" style="width:100%">
-            <img src="../Assests/HeaderBackround.JPG style=" width:100% ">
-          <img src="../Assests/DarkClock.jpg " style="width:100% ">
-          <img src="../Assests/Camera.png " style="width:100% ">
-          <img src="../Assests/Robot.jpg " style="width:100% ">
+            <img src="../Assests/bowieResize.jpg" alt="a black and white photo of david bowie illuminated against a wall">
+            <img src="../Assests/brightonRobot.jpg" alt="a punk style graffiti robot drawn on the street walls of brihgton">
+            <img src="../Assests/clockTowerResize.jpg" alt="a clock tower at night" />
+            <img src="../Assests/catJoy.jpg " alt="a sleeping cat" />
+        </div>
+
+        <div class="column ">
+            <img src="../Assests/catNutty.jpg" alt="a livley tortishell cat" />
+            <img src="../Assests/grass.jpg" alt="grass lightly trodden on and wet from a light rain" />
+            <img src="../Assests/northernQ.jpg" alt="the great northern railway found in ancoats manchester" />
+            <img src="../Assests/nuttyInABox.jpg" alt="a lively tortishell cat found in a box" />
+            <img src="../Assests/sunnyRoyton.jpg " alt="sunrise shining on a website early in the morning in royton" />
+            <img src="../Assests/camera2.jpg " alt="a vintage 1940's nikon camera" />
+        </div>
+
+        <div class="column ">
+            <img src="../Assests/grapes.jpg" alt="grapes grown in the wild" />
+            <img src="../Assests/trainingSesh.jpg " alt="a boy wearing a christmas jumper giving a talk" />
+            <img src="../Assests/lazyJoy.jpg" alt=" a sleeping cat on a wooden floor" />
+            <img src="../Assests/lazyNutty.jpg " alt="a cat staring instensley at the camera" />
+            <img src="../Assests/motivationalBrighton.jpg" alt=" text against a wall that reads &colon; if you are reading this, not matter who you are, 2 things are true 1) you are going to die 2) this has not happened yet. the rest is up to you!" />
+            <img src="../Assests/tedHall.jpg " alt="a student room in saint edmund Hall in oxford at night" />
+
+        </div>
+
+        <div class="column ">
+            <img src="../Assests/ollyPurs.jpg " alt="a cat sitting on a table looking down at the camera" />
+            <img src="../Assests/hackman.PNG" alt="a group of mentors that work for hack100" />
+            <img src="../Assests/tandlewoodMonument.jpg" alt="a monument in tandlewood park dedicated to fallen soilders in the second world war" />
+            <img src="../Assests/lightBulb.jpg" alt="a dim lightbulb in a dark background" />
+            <img src="../Assests/theLovleyFatima.jpg " alt="a black and white girl in a resutrant" />
+        </div>
     </div>
-
-    <div class="column ">
-    <img src="../Assests/Bowie.jpg " style="width:100% ">
-    <img src="../Assests/Joy.jpg " style="width:100% ">
-    <img src="../Assests/Motivational.jpg " style="width:100% ">
-    <img src="../Assests/NoternQuarter.jpg " style="width:100% ">
-    <img src="../Assests/SunnyOldham.jpg " style="width:100% ">
-  </div> 
-   
-  <div class="column ">
-    <img src="../Assests/Bowie.jpg " style="width:100% ">
-    <img src="../Assests/Joy.jpg " style="width:100% ">
-    <img src="../Assests/Motivational.jpg " style="width:100% ">
-    <img src="../Assests/NoternQuarter.jpg " style="width:100% ">
-    <img src="../Assests/SunnyOldham.jpg " style="width:100% ">
-    <img src="../Assests/TeddyHall.jpg " style="width:100% ">
-    
-  </div>
-  
-  <div class="column ">
-    <img src="../Assests/Bowie.jpg " style="width:100% ">
-    <img src="../Assests/Joy.jpg " style="width:100% ">
-    <img src="../Assests/Motivational.jpg " style="width:100% ">
-    <img src="../Assests/NoternQuarter.jpg " style="width:100% ">
-    <img src="../Assests/SunnyOldham.jpg " style="width:100% ">
-    <img src="../Assests/TeddyHall.jpg " style="width:100% ">
-  </div>
-</div>
-
-<style>
-* {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    font-family: Arial;
-    background: #fffde1;
-  }
-  
-  .header {
-    text-align: center;
-    padding: 32px;
-  }
-  
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-  }
-  
-  /* Create four equal columns that sits next to each other */
-  .column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-  }
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-  }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
-</style>
-
 </body>
+
 </html>
